@@ -1,0 +1,149 @@
+# ===== DonutCore config =====
+# NOTE: prices below are placeholders. Edit them to match what you want.
+
+starting-money: 0
+starting-shards: 0
+
+sidebar:
+  # Title is the player's name like in the screenshot
+  title: "&f{name}"
+  # Placeholders: {name} {money} {shards} {kills} {deaths} {playtime} {ping}
+  lines:
+    - "&a$ &f{money}"
+    - "&d\u2726 &f{shards}"
+    - "&c\u2694 &f{kills}"
+    - "&e\u231a &f{playtime}"
+
+rtp:
+  min: 500
+  max: 5000
+  cooldown-seconds: 30
+
+ah:
+  max-listings: 10
+  duration-hours: 48
+  tax-percent: 0
+
+# Items players can put in /sell (price per 1 item)
+sell:
+  DIAMOND: 150
+  EMERALD: 100
+  GOLD_INGOT: 40
+  IRON_INGOT: 25
+  COPPER_INGOT: 5
+  COAL: 8
+  REDSTONE: 5
+  LAPIS_LAZULI: 8
+  NETHERITE_INGOT: 1500
+  COBBLESTONE: 1
+  STONE: 2
+  OAK_LOG: 3
+  WHEAT: 3
+  CARROT: 3
+  POTATO: 3
+  BONE: 4
+  STRING: 4
+  GUNPOWDER: 10
+  ENDER_PEARL: 30
+  BLAZE_ROD: 20
+  SUGAR_CANE: 2
+  PUMPKIN: 4
+  MELON_SLICE: 1
+  BEEF: 4
+  PORKCHOP: 4
+  COOKED_BEEF: 6
+
+shop:
+  categories:
+    blocks:
+      name: "&aBlocks"
+      icon: GRASS_BLOCK
+      items:
+        STONE: 10
+        COBBLESTONE: 6
+        OAK_LOG: 15
+        OAK_PLANKS: 5
+        GLASS: 8
+        SAND: 6
+        DIRT: 2
+        OBSIDIAN: 200
+        TERRACOTTA: 12
+    ores:
+      name: "&bOres & Minerals"
+      icon: DIAMOND
+      items:
+        COAL: 20
+        IRON_INGOT: 60
+        GOLD_INGOT: 100
+        DIAMOND: 400
+        EMERALD: 300
+        REDSTONE: 15
+        LAPIS_LAZULI: 20
+    food:
+      name: "&6Food"
+      icon: COOKED_BEEF
+      items:
+        COOKED_BEEF: 20
+        BREAD: 10
+        GOLDEN_CARROT: 40
+        GOLDEN_APPLE: 500
+    combat:
+      name: "&cCombat"
+      icon: DIAMOND_SWORD
+      items:
+        ARROW: 5
+        SHIELD: 150
+        BOW: 100
+        ENDER_PEARL: 100
+        TOTEM_OF_UNDYING: 5000
+    farming:
+      name: "&2Farming"
+      icon: WHEAT
+      items:
+        WHEAT_SEEDS: 3
+        CARROT: 8
+        POTATO: 8
+        BONE_MEAL: 10
+        SUGAR_CANE: 8
+    redstone:
+      name: "&4Redstone"
+      icon: REDSTONE
+      items:
+        REDSTONE: 15
+        REPEATER: 40
+        OBSERVER: 80
+        PISTON: 60
+        HOPPER: 150
+
+shardshop:
+  items:
+    money1:
+      name: "&a$100K"
+      icon: PAPER
+      cost: 10
+      command: "eco givemoney %player% 100000"
+    money2:
+      name: "&a$1M"
+      icon: PAPER
+      cost: 80
+      command: "eco givemoney %player% 1000000"
+    diamonds:
+      name: "&b32 Diamonds"
+      icon: DIAMOND
+      cost: 25
+      command: "give %player% diamond 32"
+    elytra:
+      name: "&dElytra"
+      icon: ELYTRA
+      cost: 150
+      command: "give %player% elytra 1"
+    gapples:
+      name: "&616 Golden Apples"
+      icon: GOLDEN_APPLE
+      cost: 30
+      command: "give %player% golden_apple 16"
+    totem:
+      name: "&eTotem of Undying"
+      icon: TOTEM_OF_UNDYING
+      cost: 40
+      command: "give %player% totem_of_undying 1"
